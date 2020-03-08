@@ -1,0 +1,1461 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="一个存储文档的小仓库">
+      
+      
+        <link rel="canonical" href="https://docs.mahoo12138.cn/mkdocs/MaterialSyntax/">
+      
+      
+        <meta name="author" content="Mahoo12138">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/logo.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Material主题语法补充 - 黄同学的文档仓库</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" type="application/manifest+json" href="../../manifest.webmanifest" crossorigin="use-credentials">
+    
+    
+      <link rel="stylesheet" href="../../assets/css/ProgressBar.css">
+    
+      <link rel="stylesheet" href="../../assets/css/VueTheme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#material" tabindex="0" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.mahoo12138.cn" title="黄同学的文档仓库" aria-label="黄同学的文档仓库" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../assets/images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              黄同学的文档仓库
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Material主题语法补充
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/Mahoo12138/docs-with-mkdocs.git/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Mahoo12138/docs-with-mkdocs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
+        首页
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../study/note/1/" class="md-tabs__link">
+          学习
+        </a>
+      
+    </li>
+  
+
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../proverb/anime/" class="md-tabs__link">
+          句子
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../others/childhood/" class="md-tabs__link">
+          我
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../mkdocs/" class="md-tabs__link">
+          其他
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://docs.mahoo12138.cn" title="黄同学的文档仓库" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../assets/images/logo.svg" width="48" height="48">
+      
+    </a>
+    黄同学的文档仓库
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/Mahoo12138/docs-with-mkdocs.git/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Mahoo12138/docs-with-mkdocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      学习
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        学习
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      笔记
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      微机原理
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        微机原理
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/note/1/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/note/2/" title="微机的组成原理" class="md-nav__link">
+      微机的组成原理
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/knowledge/" title="冷知识" class="md-nav__link">
+      冷知识
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      英语文章
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        英语文章
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/passages/20200229/" title="The blood of poor Americans" class="md-nav__link">
+      The blood of poor Americans
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/passages/20200215/" title="City For The Homeless" class="md-nav__link">
+      City For The Homeless
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/experience/" title="经验法则" class="md-nav__link">
+      经验法则
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      句子
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        句子
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proverb/anime/" title="动漫台词" class="md-nav__link">
+      动漫台词
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proverb/netease/" title="网易云热评" class="md-nav__link">
+      网易云热评
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      我
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        我
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../others/childhood/" title="童年回忆" class="md-nav__link">
+      童年回忆
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../others/anime/" title="日本动漫" class="md-nav__link">
+      日本动漫
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Minecraft
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Minecraft
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../minecraft/mc-log-01/" title="日志 Ⅰ" class="md-nav__link">
+      日志 Ⅰ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../minecraft/mc-log-02/" title="日志 Ⅱ" class="md-nav__link">
+      日志 Ⅱ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../minecraft/mc-tutorial/" title="教程" class="md-nav__link">
+      教程
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      其他
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        其他
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" title="Mkdocs" class="md-nav__link">
+      Mkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../emoji/" title="Emoji" class="md-nav__link">
+      Emoji
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    按键
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    标点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    修改键
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    其他键
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    鼠标
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    注解
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    脚注
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Mahoo12138/docs-with-mkdocs.git/edit/master/docs/mkdocs/MaterialSyntax.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="material">Material主题语法补充<a class="headerlink" href="#material" title="Permanent link">&para;</a></h1>
+<h3 id="_1">按键<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>按键是一个来自PyMdown的扩展，使输入和样式化键盘按键更加容易。通过<code>+</code>符号构建 。按键或按键组合被包围<code>++</code>，每个按键之间都用单个分隔<code>+</code>。</p>
+<div class="admonition quote">
+<p class="admonition-title">按键实例</p>
+<div class="codehilite"><pre><span></span><code>++ctrl+alt+delete++
+++1+a+space++
+++f1+f2+f3++
+</code></pre></div>
+
+</div>
+<p>​    <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-delete">Del</kbd></span><br>
+​    <span class="keys"><kbd class="key-1">1</kbd><span>+</span><kbd class="key-a">A</kbd><span>+</span><kbd class="key-space">Space</kbd></span><br>
+    <span class="keys"><kbd class="key-f1">F1</kbd><span>+</span><kbd class="key-f2">F2</kbd><span>+</span><kbd class="key-f3">F3</kbd></span></p>
+<h4 id="_2">标点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">使用</th>
+<th align="left">显示</th>
+<th align="left">别名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>backslash</code></td>
+<td align="left"><span class="keys"><kbd class="key-backslash">\</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>bar</code></td>
+<td align="left"><span class="keys"><kbd class="key-bar">|</kbd></span></td>
+<td align="left"><code>pipe</code></td>
+</tr>
+<tr>
+<td align="left"><code>brace-left</code></td>
+<td align="left"><span class="keys"><kbd class="key-brace-left">{</kbd></span></td>
+<td align="left"><code>open-brace</code></td>
+</tr>
+<tr>
+<td align="left"><code>brace-right</code></td>
+<td align="left"><span class="keys"><kbd class="key-brace-right">}</kbd></span></td>
+<td align="left"><code>close-bracket</code></td>
+</tr>
+<tr>
+<td align="left"><code>bracket-left</code></td>
+<td align="left"><span class="keys"><kbd class="key-bracket-left">[</kbd></span></td>
+<td align="left"><code>open-bracket</code></td>
+</tr>
+<tr>
+<td align="left"><code>bracket-right</code></td>
+<td align="left"><span class="keys"><kbd class="key-bracket-right">]</kbd></span></td>
+<td align="left"><code>close-brace</code></td>
+</tr>
+<tr>
+<td align="left"><code>colon</code></td>
+<td align="left"><span class="keys"><kbd class="key-colon">:</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>comma</code></td>
+<td align="left"><span class="keys"><kbd class="key-comma">,</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>double-quote</code></td>
+<td align="left"><span class="keys"><kbd class="key-double-quote">"</kbd></span></td>
+<td align="left"><code>dblquote</code></td>
+</tr>
+<tr>
+<td align="left"><code>equal</code></td>
+<td align="left"><span class="keys"><kbd class="key-equal">=</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>exclam</code></td>
+<td align="left"><span class="keys"><kbd class="key-exclam">!</kbd></span></td>
+<td align="left"><code>exclamation</code></td>
+</tr>
+<tr>
+<td align="left"><code>grave</code></td>
+<td align="left"><span class="keys"><kbd class="key-grave">`</kbd></span></td>
+<td align="left"><code>grave-accent</code></td>
+</tr>
+<tr>
+<td align="left"><code>greater</code></td>
+<td align="left"><span class="keys"><kbd class="key-greater">&gt;</kbd></span></td>
+<td align="left"><code>greater-than</code>, <code>gt</code></td>
+</tr>
+<tr>
+<td align="left"><code>less</code></td>
+<td align="left"><span class="keys"><kbd class="key-less">&lt;</kbd></span></td>
+<td align="left"><code>less-than</code>, <code>lt</code></td>
+</tr>
+<tr>
+<td align="left"><code>minus</code></td>
+<td align="left"><span class="keys"><kbd class="key-minus">-</kbd></span></td>
+<td align="left"><code>hyphen</code></td>
+</tr>
+<tr>
+<td align="left"><code>period</code></td>
+<td align="left"><span class="keys"><kbd class="key-period">.</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>plus</code></td>
+<td align="left"><span class="keys"><kbd class="key-plus">+</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>question</code></td>
+<td align="left"><span class="keys"><kbd class="key-question">?</kbd></span></td>
+<td align="left"><code>question-mark</code></td>
+</tr>
+<tr>
+<td align="left"><code>semicolon</code></td>
+<td align="left"><span class="keys"><kbd class="key-semicolon">;</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>single-quote</code></td>
+<td align="left"><span class="keys"><kbd class="key-single-quote">'</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>slash</code></td>
+<td align="left"><span class="keys"><kbd class="key-slash">/</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>tilde</code></td>
+<td align="left"><span class="keys"><kbd class="key-tilde">~</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>underscore</code></td>
+<td align="left"><span class="keys"><kbd class="key-underscore">_</kbd></span></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_3">修改键<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">使用</th>
+<th align="left">显示</th>
+<th align="left">别名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>alt</code></td>
+<td align="left"><span class="keys"><kbd class="key-alt">Alt</kbd></span></td>
+<td align="left"><code>menu</code></td>
+</tr>
+<tr>
+<td align="left"><code>command</code></td>
+<td align="left"><span class="keys"><kbd class="key-command">Cmd</kbd></span></td>
+<td align="left"><code>cmd</code></td>
+</tr>
+<tr>
+<td align="left"><code>control</code></td>
+<td align="left"><span class="keys"><kbd class="key-control">Ctrl</kbd></span></td>
+<td align="left"><code>ctrl</code></td>
+</tr>
+<tr>
+<td align="left"><code>function</code></td>
+<td align="left"><span class="keys"><kbd class="key-function">Fn</kbd></span></td>
+<td align="left"><code>fn</code></td>
+</tr>
+<tr>
+<td align="left"><code>left-alt</code></td>
+<td align="left"><span class="keys"><kbd class="key-left-alt">Left Alt</kbd></span></td>
+<td align="left"><code>lalt</code>, <code>left-menu</code>, <code>lmenu</code></td>
+</tr>
+<tr>
+<td align="left"><code>left-control</code></td>
+<td align="left"><span class="keys"><kbd class="key-left-control">Left Ctrl</kbd></span></td>
+<td align="left"><code>lcontrol</code>, <code>lctrl</code>, <code>left-ctrl</code></td>
+</tr>
+<tr>
+<td align="left"><code>left-shift</code></td>
+<td align="left"><span class="keys"><kbd class="key-left-shift">Left Shift</kbd></span></td>
+<td align="left"><code>lshift</code></td>
+</tr>
+<tr>
+<td align="left"><code>left-windows</code></td>
+<td align="left"><span class="keys"><kbd class="key-left-windows">Left Win</kbd></span></td>
+<td align="left"><code>left-win</code>, <code>lwin</code></td>
+</tr>
+<tr>
+<td align="left"><code>meta</code></td>
+<td align="left"><span class="keys"><kbd class="key-meta">Meta</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>option</code></td>
+<td align="left"><span class="keys"><kbd class="key-option">Option</kbd></span></td>
+<td align="left"><code>opt</code></td>
+</tr>
+<tr>
+<td align="left"><code>right-alt</code></td>
+<td align="left"><span class="keys"><kbd class="key-right-alt">Right Alt</kbd></span></td>
+<td align="left"><code>ralt</code>, <code>right-menu</code>, <code>rmenu</code></td>
+</tr>
+<tr>
+<td align="left"><code>right-control</code></td>
+<td align="left"><span class="keys"><kbd class="key-right-control">Right Ctrl</kbd></span></td>
+<td align="left"><code>rcontrol</code>, <code>rctrl</code>, <code>right-ctrl</code></td>
+</tr>
+<tr>
+<td align="left"><code>right-shift</code></td>
+<td align="left"><span class="keys"><kbd class="key-right-shift">Right Shift</kbd></span></td>
+<td align="left"><code>rshift</code></td>
+</tr>
+<tr>
+<td align="left"><code>right-windows</code></td>
+<td align="left"><span class="keys"><kbd class="key-right-windows">Right Win</kbd></span></td>
+<td align="left"><code>right-win</code>, <code>rwin</code></td>
+</tr>
+<tr>
+<td align="left"><code>shift</code></td>
+<td align="left"><span class="keys"><kbd class="key-shift">Shift</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>windows</code></td>
+<td align="left"><span class="keys"><kbd class="key-windows">Win</kbd></span></td>
+<td align="left"><code>win</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_4">其他键<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Display</th>
+<th align="left">Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>backtab</code></td>
+<td align="left"><span class="keys"><kbd class="key-backtab">Back Tab</kbd></span></td>
+<td align="left"><code>bktab</code></td>
+</tr>
+<tr>
+<td align="left"><code>browser-back</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-back">Browser Back</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>browser-favorites</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-favorites">Browser Favorites</kbd></span></td>
+<td align="left"><code>favorites</code></td>
+</tr>
+<tr>
+<td align="left"><code>browser-forward</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-forward">Browser Forward</kbd></span></td>
+<td align="left"><code>forward</code></td>
+</tr>
+<tr>
+<td align="left"><code>browser-forward</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-forward">Browser Forward</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>browser-refresh</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-refresh">Browser Refresh</kbd></span></td>
+<td align="left"><code>refresh</code></td>
+</tr>
+<tr>
+<td align="left"><code>browser-search</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-search">Browser Search</kbd></span></td>
+<td align="left"><code>search</code></td>
+</tr>
+<tr>
+<td align="left"><code>browser-stop</code></td>
+<td align="left"><span class="keys"><kbd class="key-browser-stop">Browser Stop</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>copy</code></td>
+<td align="left"><span class="keys"><kbd class="key-copy">Copy</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>context-menu</code></td>
+<td align="left"><span class="keys"><kbd class="key-context-menu">Context Menu</kbd></span></td>
+<td align="left"><code>apps</code></td>
+</tr>
+<tr>
+<td align="left"><code>mail</code></td>
+<td align="left">++Mail++</td>
+<td align="left"><code>launch-mail</code></td>
+</tr>
+<tr>
+<td align="left"><code>media</code></td>
+<td align="left"><span class="keys"><kbd class="key-media">Media</kbd></span></td>
+<td align="left"><code>launch-media</code></td>
+</tr>
+<tr>
+<td align="left"><code>media-next-track</code></td>
+<td align="left"><span class="keys"><kbd class="key-media-next-track">Next Track</kbd></span></td>
+<td align="left"><code>next-track</code></td>
+</tr>
+<tr>
+<td align="left"><code>media-pause</code></td>
+<td align="left"><span class="keys"><kbd class="key-media-pause">Pause</kbd></span></td>
+<td align="left"><code>pause</code></td>
+</tr>
+<tr>
+<td align="left"><code>media-play</code></td>
+<td align="left"><span class="keys"><kbd class="key-media-play">Play</kbd></span></td>
+<td align="left"><code>play</code></td>
+</tr>
+<tr>
+<td align="left"><code>media-play-pause</code></td>
+<td align="left"><span class="keys"><kbd class="key-media-play-pause">Play/Pause</kbd></span></td>
+<td align="left"><code>play-pause</code></td>
+</tr>
+<tr>
+<td align="left"><code>media-prev-track</code></td>
+<td align="left"><span class="keys"><kbd class="key-media-prev-track">Previous Track</kbd></span></td>
+<td align="left"><code>prev-track</code></td>
+</tr>
+<tr>
+<td align="left"><code>media-stop</code></td>
+<td align="left"><span class="keys"><kbd class="key-media-stop">Stop</kbd></span></td>
+<td align="left"><code>stop</code></td>
+</tr>
+<tr>
+<td align="left"><code>print</code></td>
+<td align="left"><span class="keys"><kbd class="key-print">Print</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>reset</code></td>
+<td align="left"><span class="keys"><kbd class="key-reset">Reset</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>select</code></td>
+<td align="left"><span class="keys"><kbd class="key-select">Select</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>sleep</code></td>
+<td align="left"><span class="keys"><kbd class="key-sleep">Sleep</kbd></span></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>volume-down</code></td>
+<td align="left"><span class="keys"><kbd class="key-volume-down">Volume Down</kbd></span></td>
+<td align="left"><code>vol-down</code></td>
+</tr>
+<tr>
+<td align="left"><code>volume-mute</code></td>
+<td align="left"><span class="keys"><kbd class="key-volume-mute">Mute</kbd></span></td>
+<td align="left"><code>mute</code></td>
+</tr>
+<tr>
+<td align="left"><code>volume-up</code></td>
+<td align="left"><span class="keys"><kbd class="key-volume-up">Volume Up</kbd></span></td>
+<td align="left"><code>vol-up</code></td>
+</tr>
+<tr>
+<td align="left"><code>zoom</code></td>
+<td align="left"><span class="keys"><kbd class="key-zoom">Zoom</kbd></span></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="_5">鼠标<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">使用</th>
+<th align="left">显示</th>
+<th align="left">别名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>left-button</code></td>
+<td align="left"><span class="keys"><kbd class="key-left-button">Left Button</kbd></span></td>
+<td align="left"><code>lbutton</code></td>
+</tr>
+<tr>
+<td align="left"><code>middle-button</code></td>
+<td align="left"><span class="keys"><kbd class="key-middle-button">Middle Button</kbd></span></td>
+<td align="left"><code>mbutton</code></td>
+</tr>
+<tr>
+<td align="left"><code>right-button</code></td>
+<td align="left"><span class="keys"><kbd class="key-right-button">Right Button</kbd></span></td>
+<td align="left"><code>rbutton</code></td>
+</tr>
+<tr>
+<td align="left"><code>x-button1</code></td>
+<td align="left"><span class="keys"><kbd class="key-x-button1">X Button 1</kbd></span></td>
+<td align="left"><code>xbutton1</code></td>
+</tr>
+<tr>
+<td align="left"><code>x-button2</code></td>
+<td align="left"><span class="keys"><kbd class="key-x-button2">X Button 2</kbd></span></td>
+<td align="left"><code>xbutton2</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">注解<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>写注解使用，依赖模块：admonition</p>
+<p>支持多种样式，如带有标题、无标题、空标题，还支持折叠式(常用于FAQ)，</p>
+<p>支持多种颜色风格，包括警告提示、错误提示、成功提示等11种风格，</p>
+<p>这有11种样式，每一种样式都支持多种关键字，比如note可以用seealso替代，summary可以用tldr替代，当首标志为<code>!!!</code>时，默认是开启该注解的，<code>???</code>则为折叠状态，依赖模块: pymdownx.details，注意，折叠状态在浏览器内通过<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-f">F</kbd></span>无法搜索到。</p>
+<div class="codehilite"><pre><span></span><code>!!! note &quot;note, seealso&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">note, seealso</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! summary &quot;summary, tldr&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition summary">
+<p class="admonition-title">summary, tldr</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! info &quot;info, todo&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">info, todo</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! tip &quot;tip, hint, important&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">tip, hint, important</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! success &quot;success, check, done&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition success">
+<p class="admonition-title">success, check, done</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! question &quot;question, help, faq&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition question">
+<p class="admonition-title">question, help, faq</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! warning &quot;warning, caution, attention&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">warning, caution, attention</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! failure &quot;failure, fail, missing&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition failure">
+<p class="admonition-title">failure, fail, missing</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! danger &quot;danger, error&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition danger">
+<p class="admonition-title">danger, error</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! bug &quot;bug&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition bug">
+<p class="admonition-title">bug</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<div class="codehilite"><pre><span></span><code>!!! quote &quot;quote, cite&quot;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<div class="admonition quote">
+<p class="admonition-title">quote, cite</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</p>
+</div>
+<h3 id="_7">脚注<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>依赖模块: footnotes</p>
+<p>第一步，插入引用</p>
+<div class="codehilite"><pre><span></span><code>Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
+</code></pre></div>
+
+<p>第二步，插入内容</p>
+<div class="codehilite"><pre><span></span><code>[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, 
+      justo purus auctor massa, nec semper lorem quam in massa.
+</code></pre></div>
+
+<p>可以看到，上面脚注1内容是单行方式，脚注2内容是多行方式</p>
+<p>查看效果：</p>
+<p>Lorem ipsum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dolor sit amet, consectetur adipiscing elit.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<div class="admonition tip">
+<p class="admonition-title">注意</p>
+<ol>
+<li>
+<p>不一定要用[^1]，也可以用自定义关键字，比如[^mykey]，但这样下面也要改为[^mykey]，也可以支持空格，比如[^my key]（当然后面也要[^my key]:</p>
+</li>
+<li>
+<p>无论脚注标签写的是什么（即[^1]或者[^mykey]，在展示脚注标签和展示脚注内容时候都是自动用数字从1开始累加标记，而不是自己写的内容）</p>
+</li>
+<li>
+<p>[^1]: 脚注内容无论写在.md中的任何位置，在展示时候都是自动位于文档的最下方，并且会自动添加<code>---</code>这样一个横线</p>
+</li>
+</ol>
+<hr />
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019-2020 Mahoo12138
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/mahoo12138" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/mahoo12138" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=930814673" target="_blank" rel="noopener" title="qq" class="md-footer-social__link fa fa-qq"></a>
+    
+      <a href="https://weibo.com/mahoo12138" target="_blank" rel="noopener" title="weibo" class="md-footer-social__link fa fa-weibo"></a>
+    
+      <a href="https://zhihu.com/people/mahoo12138" target="_blank" rel="noopener" title="zhihu" class="md-footer-social__link fa fa-zhihu"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c33a9706.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/js/baidu-tongji.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
