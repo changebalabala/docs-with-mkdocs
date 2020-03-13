@@ -9,11 +9,12 @@ repo_url: 'https://github.com/Mahoo12138/docs-with-mkdocs.git'
 
 nav:
  - 首页: index.md
- - 学习 :
+ - 学习 : 
     - 笔记: 
         - 微机原理: 
             - 概述: study/note/1.md
-            - 微机的组成原理: study/note/2.md
+            - 8086微处理器: study/note/2.md
+            - 寻址方式与指令系统: study/note/3.md
     - 冷知识 : study/knowledge.md
     - 英语文章: 
         - The blood of poor Americans: study/passages/20200229.md
