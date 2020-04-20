@@ -4,26 +4,23 @@ site_author: 'Mahoo12138'
 site_url: 'https://docs.mahoo12138.cn'
 
 repo_name: 'Mahoo12138/docs-with-mkdocs'
-repo_url: 'https://github.com/Mahoo12138/docs-with-mkdocs.git'
+repo_url: 'https://github.com/Mahoo12138/docs-with-mkdocs'
 
 
 nav:
  - 首页: index.md
  - 学习 : 
-    - 笔记: 
-        - 微机原理: 
-            - 概述: study/note/1.md
-            - 8086微处理器: study/note/2.md
-            - 寻址方式与指令系统: study/note/3.md
     - 冷知识 : study/knowledge.md
     - 英语文章: 
         - The blood of poor Americans: study/passages/20200229.md
         - City For The Homeless: study/passages/20200215.md
     - 经验法则 : study/experience.md
- - 句子 :
-    - 动漫台词 : proverb/anime.md
-    - 网易云热评 : proverb/netease.md
+ - 文字 :
+    - 阅读文摘: text/digest.md
+    - 动漫台词 : text/anime.md
+    - 音乐热评 : text/netease.md
  - 我: 
+    -  生活小记: others/life.md
     -  童年回忆: others/childhood.md
     -  日本动漫: others/anime.md
     -  Minecraft :
@@ -36,6 +33,13 @@ nav:
     
 
 
+extra_javascript: 
+  - 'assets/js/baidu-tongji.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+# 自定义css
+extra_css:
+  - 'assets/css/ProgressBar.css'
+  - 'assets/css/VueTheme.css'
 
 # Copyright
 copyright: 'Copyright &copy; 2019-2020 Mahoo12138'
@@ -45,42 +49,38 @@ theme:
   font: 
     text: 'Roboto'
     code: 'Roboto Mono'
-  language: 'zh'
-  logo: 'assets/images/logo.svg'
-  favicon: 'assets/images/logo.ico'
+  language: zh
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.ico
   palette:
     primary: 'Pink'
     accent: 'indigo'
-  feature:
-    tabs: true
+  features:
+    - tabs
     
-extra:
-  search:
-    language: 'jp'
-  manifest: 'manifest.webmanifest'
-  social:
-    - type: 'github'
-      link: 'https://github.com/mahoo12138'
-    - type: 'twitter'
-      link: 'https://twitter.com/mahoo12138'
-    - type: 'qq'
-      link: 'tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=930814673'
-    - type: 'weibo'
-      link: 'https://weibo.com/mahoo12138'
-    - type: 'zhihu'
-      link: 'https://zhihu.com/people/mahoo12138'
   
+extra:
+  manifest: manifest.webmanifest
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/mahoo12138
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mahoo12138
+    - icon: fontawesome/brands/weibo
+      link: https://weibo.com/mahoo12138
 
-
-extra_javascript: 
-  - 'assets/js/baidu-tongji.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-# 自定义css
-extra_css:
-  - 'assets/css/ProgressBar.css'
-  - 'assets/css/VueTheme.css'
-
-
+  
+ 
+plugins:
+  - git-revision-date-localized:
+      type: datetime
+  - minify:
+      minify_html: true
+  - search:
+      prebuild_index: true
+      lang:
+        - en
+        - jp
 markdown_extensions:
   - footnotes
   - admonition
