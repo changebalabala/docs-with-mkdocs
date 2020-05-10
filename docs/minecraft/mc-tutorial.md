@@ -25,3 +25,7 @@
 
 如果无法下载，请点击这里：[Xbox组件](https://www.lanzous.com/i9lyv3i)
 
+## 存档位置
+
+`C:\Users\登录用户名\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+
