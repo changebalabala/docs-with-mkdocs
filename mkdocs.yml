@@ -9,37 +9,43 @@ repo_url: 'https://github.com/Mahoo12138/docs-with-mkdocs'
 
 nav:
  - 首页: index.md
- - 学习 : 
+ - 学习: 
     - 冷知识 : study/knowledge.md
     - 英语文章: 
         - The blood of poor Americans: study/passages/20200229.md
         - City For The Homeless: study/passages/20200215.md
-    - 经验法则 : study/experience.md
- - 文字 :
+    - 经验法则: study/experience.md
+    - 小猪佩奇学英语: study/peppa.md
+ - 文字:
     - 阅读文摘: text/digest.md
-    - 动漫台词 : text/anime.md
-    - 音乐热评 : text/netease.md
+    - 动漫台词: text/anime.md
+    - 音乐热评: text/netease.md
  - 我: 
     -  生活小记: others/life.md
-    -  童年回忆: others/childhood.md
-    -  日本动漫: others/anime.md
-    -  Minecraft :
+    -  一些想法: others/thoughts.md
+    -  我的记录: 
+        - 趣测: others/interesting-test.md
+        - 童年回忆: others/childhood.md
+        - 日本动漫: others/anime.md
+        - 进步阶梯: others/books.md
+        - 开阔视野: others/documentaries.md
+    -  Minecraft:
         - 日志 Ⅰ: minecraft/mc-log-01.md
         - 日志 Ⅱ: minecraft/mc-log-02.md
-        - 教程 : minecraft/mc-tutorial.md
- - 其他 :
+        - 教程: minecraft/mc-tutorial.md
+ - 其他:
     - Mkdocs: mkdocs/mkdocs.md
-    - Emoji: emoji.md
     
 
 
-extra_javascript: 
-  - 'assets/js/baidu-tongji.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+extra_javascript : 
+  - assets/js/baidu-tongji.js
+  - assets/js/tables.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
 # 自定义css
-extra_css:
-  - 'assets/css/ProgressBar.css'
-  - 'assets/css/VueTheme.css'
+extra_css :
+  - assets/css/ProgressBar.css
 
 # Copyright
 copyright: 'Copyright &copy; 2019-2020 Mahoo12138'
@@ -53,14 +59,15 @@ theme:
   logo: assets/images/logo.svg
   favicon: assets/images/logo.ico
   palette:
-    primary: 'Pink'
+    primary: 'Light Blue'
     accent: 'indigo'
   features:
-    - tabs
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
     
   
 extra:
-  manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/mahoo12138
@@ -72,38 +79,42 @@ extra:
   
  
 plugins:
+  - awesome-pages
   - git-revision-date-localized:
       type: datetime
   - minify:
       minify_html: true
   - search:
-      prebuild_index: true
       lang:
         - en
-        - jp
+        - ja
+  
+      
 markdown_extensions:
+  - attr_list
   - footnotes
   - admonition
   - codehilite:
-      guess_lang: false
+      guess_lang: true
   - toc:
       permalink: true
-  - markdown.extensions.attr_list
   - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: none
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.tabbed
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.highlight
   - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.progressbar
   - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - pymdownx.tasklist:
+      custom_checkbox: true

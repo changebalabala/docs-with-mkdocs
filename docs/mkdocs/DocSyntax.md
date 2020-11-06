@@ -1,6 +1,78 @@
 # Material主题语法补充
 
-### 按键
+### 1. Tab 分栏
+
+> pymdownx.tabbed
+
+!!! example "Example Details"
+
+    === "效果"
+        Markdown **content**.
+    
+        Multiple paragraphs.
+    
+    === "语法"
+        More Markdown **content**.
+    
+        - list item a
+        - list item b
+
+### 2. ProgressBar 进度条
+
+PyMdown的扩展，依赖模块：**attr_list**，使用添加 *pymdownx.progressbar* 即可
+
+!!! example "进度条 示例"
+
+    === "效果"
+        [=0% "0%"]
+        [=5% "5%"]
+        [=25% "25%"]
+        [=45% "45%"]
+        [=65% "65%"]
+        [=85% "85%"]
+        [=100% "100%"]
+    
+    === "语法"
+        ```
+        [=0% "0%"]
+        [=5% "5%"]
+        [=25% "25%"]
+        [=45% "45%"]
+        [=65% "65%"]
+        [=85% "85%"]
+        [=100% "100%"]
+    	```
+阿达
+
+!!! example "带参数的进度条 示例"
+
+    === "效果"
+        [=85% "85%"]{: .candystripe}
+        [=100% "100%"]{: .candystripe .candystripe-animate}
+        [=0%]{: .thin}
+        [=5%]{: .thin}
+        [=25%]{: .thin}
+        [=45%]{: .thin}
+        [=65%]{: .thin}
+        [=85%]{: .thin}
+        [=100%]{: .thin}
+    
+    === "语法"
+        ```
+        [=85% "85%"]{: .candystripe}
+        [=100% "100%"]{: .candystripe .candystripe-animate}
+        [=0%]{: .thin}
+        [=5%]{: .thin}
+        [=25%]{: .thin}
+        [=45%]{: .thin}
+        [=65%]{: .thin}
+        [=85%]{: .thin}
+        [=100%]{: .thin}
+    	```
+
+
+
+### 3. Keys 按键
 
 按键是一个来自PyMdown的扩展，使输入和样式化键盘按键更加容易。通过`+`符号构建 。按键或按键组合被包围`++`，每个按键之间都用单个分隔`+`。
 
@@ -14,7 +86,7 @@
 ​    ++1+a+space++<br>
     ++f1+f2+f3++
 
-#### 标点
+#### 3.1 标点
 
 | 使用            | 显示              | 别名                 |
 | :-------------- | :---------------- | :------------------- |
@@ -42,7 +114,7 @@
 | `tilde`         | ++tilde++         |                      |
 | `underscore`    | ++underscore++    |                      |
 
-#### 修改键
+#### 3.2 修改键
 
 | 使用            | 显示            | 别名                              |
 | :-------------- | :-------------- | :-------------------------------- |
@@ -63,7 +135,7 @@
 | `shift`         | ++shift++       |                                   |
 | `windows`       | ++windows++         | `win`                             |
 
-#### 其他键
+#### 3.3 其他键
 
 | Name                | Display               | Aliases        |
 | :------------------ | :-------------------- | :------------- |
@@ -94,7 +166,7 @@
 | `volume-up`         | ++volume-up++         | `vol-up`       |
 | `zoom`              | ++zoom++              |                |
 
-#### 鼠标
+#### 3.4 鼠标
 
 | 使用            | 显示              | 别名       |
 | :-------------- | :---------------- | :--------- |
@@ -104,15 +176,27 @@
 | `x-button1`     | ++x-button1++     | `xbutton1` |
 | `x-button2`     | ++x-button2++     | `xbutton2` |
 
-### 注解
+### 4. Detail 注解
 
-写注解使用，依赖模块：admonition
+写注解使用，依赖模块：**admonition**
 
 支持多种样式，如带有标题、无标题、空标题，还支持折叠式(常用于FAQ)，
 
 支持多种颜色风格，包括警告提示、错误提示、成功提示等11种风格，
 
-这有11种样式，每一种样式都支持多种关键字，比如note可以用seealso替代，summary可以用tldr替代，当首标志为`!!!`时，默认是开启该注解的，`???`则为折叠状态，依赖模块: pymdownx.details，注意，折叠状态在浏览器内通过++ctrl+f++无法搜索到。
+这有11种样式，每一种样式都支持多种关键字，比如 note 可以用 seealso 替代，summary可以用tldr替代，当首标志为`!!!`时，默认是开启该注解的，`???`则为折叠状态，依赖模块: pymdownx.details，注意，折叠状态在浏览器内通过++ctrl+f++无法搜索到。
+
+```
+!!! example "example"
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+```
+
+!!! example "example"
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
 
 ```
 !!! note "note, seealso"
@@ -246,7 +330,7 @@
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-### 脚注
+### 5. footnotes 脚注
 
 依赖模块: footnotes
 
@@ -281,7 +365,45 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 	
 	---
 
+### 6. Highlight 高亮
 
+例如：
 
-[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+```markdown
+Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
+ that I am removing--}text.  And here is even more {++text that I 
+ am ++}adding.{~~
+
+~>  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~>
+
+~~}Spaces were removed and a paragraph was added.
+
+And here is a comment on {==some
+ text==}{>>This works quite well. I just wanted to comment on it.<<}. Substitutions {~~is~>are~~} great!
+
+General block handling.
+
+{--
+
+* test remove
+* test remove
+* test remove
+    * test remove
+* test remove
+
+--}
+
+{++
+
+* test add
+* test add
+* test add
+    * test add
+* test add
+
+++}
+```
+
+效果：
+
+Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text that I am removing--}text.  And here is even more {++text that I  am ++}adding.{~~ ~>  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~> ~~}Spaces were removed and a paragraph was added. And here is a comment on {==some text==}{>>This works quite well. I just wanted to comment on it.<<}. Substitutions {~~is~>are~~} great! General block handling. {-- * test remove * test remove * test remove    * test remove * test remove --} {++ * test add * test add * test add    * test add * test add ++}

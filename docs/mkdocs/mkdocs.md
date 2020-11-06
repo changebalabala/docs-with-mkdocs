@@ -1,7 +1,3 @@
 + [发布至GitHub Pages](ToGitHubPages.md)
-
-+ [Material主题语法补充](MaterialSyntax.md)
-
-+ [Material主题配色](MaterialColor.md)
-
-
++ [文档编辑小册](DocSyntax.md)
++ [Material主题配置](MaterialColor.md)

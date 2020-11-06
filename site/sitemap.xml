@@ -1,67 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://docs.mahoo12138.cn/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/study/knowledge/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/study/passages/20200229/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/study/passages/20200215/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/study/experience/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.mahoo12138.cn/study/peppa/</loc>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/text/digest/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/text/anime/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/text/netease/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/others/life/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.mahoo12138.cn/others/thoughts/</loc>
+     <lastmod>2020-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.mahoo12138.cn/others/interesting-test/</loc>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/others/childhood/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/others/anime/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.mahoo12138.cn/others/books/</loc>
+     <lastmod>2020-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.mahoo12138.cn/others/documentaries/</loc>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/minecraft/mc-log-01/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/minecraft/mc-log-02/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/minecraft/mc-tutorial/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.mahoo12138.cn/mkdocs/mkdocs/</loc>
-     <lastmod>2020-05-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.mahoo12138.cn/emoji/</loc>
-     <lastmod>2020-05-18</lastmod>
+     <lastmod>2020-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
