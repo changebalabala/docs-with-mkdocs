@@ -14,6 +14,8 @@ nav:
     - 英语文章: 
         - The blood of poor Americans: study/passages/20200229.md
         - City For The Homeless: study/passages/20200215.md
+        - Floating Point Math: study/passages/20201110.md
+        - Keeping it in the family: study/passages/20201124.md
     - 经验法则: study/experience.md
     - 小猪佩奇学英语: study/peppa.md
  - 文字:
@@ -21,14 +23,16 @@ nav:
     - 动漫台词: text/anime.md
     - 音乐热评: text/netease.md
  - 我: 
-    -  生活小记: others/life.md
-    -  一些想法: others/thoughts.md
+    -  流水账: mahoo/diary.md
+    -  生活小记: mahoo/life.md
+    -  一些想法: mahoo/thoughts.md
+    - 简单道理: mahoo/truth.md
     -  我的记录: 
-        - 趣测: others/interesting-test.md
-        - 童年回忆: others/childhood.md
-        - 日本动漫: others/anime.md
-        - 进步阶梯: others/books.md
-        - 开阔视野: others/documentaries.md
+        - 趣测: mahoo/interesting-test.md
+        - 童年回忆: mahoo/childhood.md
+        - 日本动漫: mahoo/anime.md
+        - 进步阶梯: mahoo/books.md
+        - 开阔视野: mahoo/documentaries.md
     -  Minecraft:
         - 日志 Ⅰ: minecraft/mc-log-01.md
         - 日志 Ⅱ: minecraft/mc-log-02.md
