@@ -3,9 +3,10 @@ site_description: '一个存储文档的小仓库'
 site_author: 'Mahoo12138'
 site_url: 'https://docs.mahoo12138.cn'
 
-repo_name: 'Mahoo12138/docs-with-mkdocs'
-repo_url: 'https://github.com/Mahoo12138/docs-with-mkdocs'
+repo_name: Mahoo12138/docs-with-mkdocs
+repo_url: https://github.com/Mahoo12138/docs-with-mkdocs
 
+copyright: Copyright &copy; 2019 - 2021 Mahoo12138
 
 nav:
  - 首页: index.md
@@ -23,8 +24,10 @@ nav:
     - 动漫台词: text/anime.md
     - 音乐热评: text/netease.md
  - 我: 
-    -  流水账: mahoo/diary.md
-    -  生活小记: mahoo/life.md
+    -  生活小记: 
+        -  有感而发:mahoo/life.md
+        -  流水账1: mahoo/diary-1.md
+        -  流水账2: mahoo/diary-2.md
     -  一些想法: mahoo/thoughts.md
     - 简单道理: mahoo/truth.md
     -  我的记录: 
@@ -39,8 +42,10 @@ nav:
         - 教程: minecraft/mc-tutorial.md
  - 其他:
     - Mkdocs: mkdocs/mkdocs.md
-    
-
+# 谷歌分析    
+google_analytics:
+  - UA-162023690-2
+  - auto
 
 extra_javascript : 
   - assets/js/baidu-tongji.js
@@ -56,6 +61,8 @@ copyright: 'Copyright &copy; 2019-2020 Mahoo12138'
 
 theme: 
   name: material
+  icon:
+    repo: fontawesome/brands/github
   font: 
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -69,7 +76,7 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.tabs
-    
+    - navigation.top
   
 extra:
   social:
@@ -77,17 +84,20 @@ extra:
       link: https://github.com/mahoo12138
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/mahoo12138
+      name: Mahoo12138 on Twitter
     - icon: fontawesome/brands/weibo
       link: https://weibo.com/mahoo12138
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:mahoo12138@outlook.com
+      name: Email to Mahoo12138
 
   
  
 plugins:
-  - awesome-pages
+  - git-revision-date:
+      enabled_if_env: CI
   - git-revision-date-localized:
-      type: datetime
-  - minify:
-      minify_html: true
+      type: date
   - search:
       lang:
         - en
@@ -116,9 +126,8 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.progressbar
   - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-  - pymdownx.tasklist:
-      custom_checkbox: true

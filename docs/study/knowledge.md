@@ -2,9 +2,13 @@
 
 收集有用的，没用的，有趣的，无聊的冷知识
 
-## 一句话冷知识
+## 简单冷知识
 
 + 绝大多数啤酒盖都是21个褶；
++ 
++ 40 年时间往返一次人马座，飞船将消耗 60 亿人生存上千年所需的资源。
++ NASA 在庆祝五十周年纪念时向北极星发送了一首披头士的《穿越宇宙》。
++ 人类史上最快的飞行器——旅行者一号，超过第二宇宙速度，已经飞过了冥王星轨道，但依旧没有飞出奥尔特云。
 
 
 
@@ -22,7 +26,7 @@
 
 !!! note "[地球上最长的不经过海洋的直线](http://www.thatsmags.com/china/post/10356/the-longest-straight-path-on-earth-starts-in-east-china-ends-in-liberia) - 来源于网络"
     从浙江省台州市南部的石塘镇开始向西走，然后是武汉、西安、青海。穿越喜马拉雅山脉后，你会到达塔吉克斯坦，通过乌兹别克斯坦，土库曼斯坦，伊朗，伊拉克，约旦，以色列，埃及（穿过开罗市中心！）、利比亚，尼日尔，布基纳法索，加纳，科特迪瓦，最后到达利比里亚。
-    ![](D:\Pictures\js-css-cdn\docs-images\line.jpg)
+![](http://online.thatsmags.com/uploads/content/1506/9356/straight-line.jpg))
     由于地图投影，这条线看起来是弯的，但是它实际上是直线。
     ![](https://cdn.jsdelivr.net/gh/mahoo12138/js-css-cdn/docs-images/line2.jpg)
 
@@ -35,6 +39,13 @@
 
 !!! note "一天的毫秒数 - 来源于网络"
     一天的毫秒数为 $5^5 \cdot 4^4 \cdot 3^3 \cdot 2^2 \cdot 1^1$，来源如下：<br> 1 天 24 小时：$24 = 4 x 3 \times 2$<br> 1 小时 60 分钟：$60 = 5 \times 4 \times 3$<br> 1 分钟 60 秒：$60 = 5 \times 4 \times 3$<br> 1 秒 1000 微秒：$1000 = 5 \times 5 \times 5 \times 4 \times 2$
+
+!!! note "Windows XP 的壁纸山坡"
+    Windows XP 的默认壁纸，大概是世界上观看次数最多的照片之一。那是一座真实的小山坡，位于加利福尼亚州索诺玛市12号高速公路旁，当年是一片草地，现在被一排排葡萄架覆盖着。
+如果你想知道这座小山的确切位置，可以在 Google Map 输入坐标"38.249069, -122.410126"。
+![](https://cdn.beekka.com/blogimg/asset/202102/bg2021022708.jpg)
+
+
 
 
 
